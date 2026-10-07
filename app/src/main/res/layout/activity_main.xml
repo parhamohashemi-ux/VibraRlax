@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:fillViewport="true">
+    <LinearLayout
+        android:layout_width="match_parent" android:layout_height="wrap_content"
+        android:orientation="vertical" android:padding="24dp">
+
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+            android:text="@string/app_name" android:textSize="28sp" android:textStyle="bold" />
+
+        <TextView android:id="@+id/status"
+            android:layout_width="wrap_content" android:layout_height="wrap_content"
+            android:layout_marginTop="4dp" android:text="Ready" />
+
+        <TextView android:id="@+id/intensityLabel"
+            android:layout_width="wrap_content" android:layout_height="wrap_content"
+            android:layout_marginTop="28dp" android:textSize="16sp" />
+
+        <com.google.android.material.slider.Slider android:id="@+id/intensitySlider"
+            android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:valueFrom="1" android:valueTo="100" android:stepSize="1"
+            android:value="60" />
+
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+            android:layout_marginTop="16dp" android:text="Vibrate on" android:textSize="16sp" />
+
+        <Spinner android:id="@+id/targetSpinner"
+            android:layout_width="match_parent" android:layout_height="48dp" />
+
+        <TextView android:id="@+id/controllerStatus"
+            android:layout_width="wrap_content" android:layout_height="wrap_content"
+            android:textSize="13sp" />
+
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+            android:layout_marginTop="16dp" android:text="Pattern" android:textSize="16sp" />
+
+        <RadioGroup android:id="@+id/patternGroup"
+            android:layout_width="match_parent" android:layout_height="wrap_content" />
+
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+            android:layout_marginTop="16dp" android:text="Timer" android:textSize="16sp" />
+
+        <Spinner android:id="@+id/timerSpinner"
+            android:layout_width="match_parent" android:layout_height="48dp" />
+
+        <com.google.android.material.button.MaterialButton android:id="@+id/startStop"
+            android:layout_width="match_parent" android:layout_height="64dp"
+            android:layout_marginTop="32dp" android:text="Start" android:textSize="18sp" />
+    </LinearLayout>
+</ScrollView>
